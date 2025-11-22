@@ -85,10 +85,19 @@ function displayMeals(results) {
 if (homeBtn) {
     homeBtn.addEventListener("click", () => {
         const details = document.getElementById("meal-details");
-        details.classList.add("d-none");
-        details.innerHTML = "";
+        if (details) {
+            details.classList.add("d-none");
+            details.innerHTML = "";
+        }
+
         const searchSection = document.getElementById("search-section");
         if (searchSection) searchSection.classList.add("d-none");
+
+         const contactSection = document.getElementById("contact-section");
+    if (contactSection && !contactSection.classList.contains("d-none")) {
+        contactSection.classList.add("d-none");
+    }
+
         row.classList.remove("d-none");
         fetchByName('');
     });
@@ -182,10 +191,19 @@ const searchLetterInput = document.getElementById("search-letter");
 
 searchBtn.addEventListener("click", () => {
     row.classList.add("d-none");
+
     const details = document.getElementById("meal-details");
     if (details) details.classList.add("d-none");
-    searchSection.classList.remove("d-none");
+
+    const searchSection = document.getElementById("search-section");
+    if (searchSection) searchSection.classList.remove("d-none");
+
+    const contactSection = document.getElementById("contact-section");
+    if (contactSection && !contactSection.classList.contains("d-none")) {
+        contactSection.classList.add("d-none");
+    }
 });
+
 
 searchNameInput.addEventListener("input", () => {
     const name = searchNameInput.value.trim();
