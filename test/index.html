@@ -1,0 +1,136 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./fontawesome/CSS/all.min.css" />
+
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-black">
+        <section id="sidenav">
+        <div class="strip-header-nav">
+            <div class="strip-logo">
+                <img src="images/logo.png" />
+            </div>
+            <div class="strip-toggel-menu">
+                <i class="fa fa-align-justify"></i>
+            </div>
+            <div class="strip-social-icon">
+                <div class="strip-lang">
+                    <span>
+                        <i class="fas fa-globe"></i>
+                    </span>
+                </div>
+                <div class="strip-share">
+                    <span>
+                        <i class="fas fa-share-alt"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-tab-menu">
+            <div class="nav-item">
+                <ul>
+                    <li class="item1">
+                        <a data-list="Home" id="home" class="nav-category">Home</a>
+                    </li>
+                    <li class="item2">
+                        <a data-list="search" id="search" class="nav-category">Search</a>
+                    </li>
+                    <li class="item3">
+                        <a data-list="categories" id="categories" class="nav-category">Categories</a>
+                    </li>
+                    <li class="item4">
+                        <a data-list="a" class="nav-category">Area</a>
+                    </li>
+                    <li class="item5">
+                        <a data-list="i" class="nav-category">Ingredients</a>
+                    </li>
+                    <li class="item6">
+                        <a data-list="contact" id="contact" class="nav-category" >Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-social-item text-center">
+                <a><i class="fab fa-facebook-f"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fas fa-brands fa-linkedin"></i></a>
+                <div class="pt-3">
+                    <span>Copyright © 2019 All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <div id="search-section" class="d-none text-light px-3 py-4 container">
+  <h4 class="mb-3">Search Meals</h4>
+  <div class="search-inputs d-flex flex-column flex-md-row gap-3">
+    <input type="text" id="search-name" class="form-control bg-dark text-light" placeholder="Search by Name">
+    <input type="text" id="search-letter" maxlength="1" class="form-control bg-dark text-light" placeholder="Search by First Letter">
+  </div>
+</div>
+
+<div class="container" id="menu">
+  <div class="row">
+ 
+  </div>
+
+</div>
+  <div id="meal-details" class="text-light d-none"></div>
+
+ <div id="contact-section" class="d-none text-light px-3 py-4 container">
+  <h4 class="mb-4">Contact Us</h4>
+  <form id="contact-form" >
+    <div class="row g-3">
+      <div class="col-md-6">
+        <input type="text" id="contact-name" class="form-control  text-light" 
+               placeholder="Enter Your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" id="contact-email" class="form-control  text-light" 
+               placeholder="Enter Your Email" required>
+      </div>
+      <div class="col-md-6">
+        <input type="text" id="contact-phone" class="form-control  text-light" 
+               placeholder="Enter Your Phone (10–15 digits)" required>
+      </div>
+      <div class="col-md-6">
+        <input type="number" id="contact-age" class="form-control  text-light" 
+               placeholder="Enter Your Age (10–100)" required>
+      </div>
+      <div class="col-md-6">
+        <input type="password" id="contact-password" class="form-control  text-light" 
+               placeholder="Enter Your Password (min 6 chars)" required>
+      </div>
+      <div class="col-md-6">
+        <input type="password" id="contact-repassword" class="form-control  text-light" 
+               placeholder="Re-enter Password" required>
+      </div>
+    </div>
+    <button type="submit" id="contact-submit" class="btn btn-danger mt-4" disabled>Submit</button>
+  </form>
+</div>
+
+
+<script  src="./js/index.js"></script>
+   
+    <script  src="./js/bootstrap.bundle.min.js"></script>
+   
+  </body>
+</html>
