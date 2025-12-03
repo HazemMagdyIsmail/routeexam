@@ -245,7 +245,7 @@ const contactRePassword = document.getElementById("contact-repassword");
 const nameRegex = /^[A-Za-z ]{3,20}$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phoneRegex = /^[0-9]{10,15}$/;
-const passRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+const passRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{6,}$/;
 
 function validateContactForm() {
   const validName = nameRegex.test(contactName.value.trim());

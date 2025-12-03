@@ -164,9 +164,9 @@ button {
 
 .nav-tab-menu li {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(60px);
     transition: 0.4s ease;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .nav-tab-menu.open-menu li {
@@ -216,7 +216,7 @@ button {
 .nav-social-item span {
     color: #999;
     display: block;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 
